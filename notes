@@ -1,0 +1,10 @@
+docker exec -ti namenode sh
+hdfs dfs -mkdir /input
+hdfs dfs -put /data/train.csv /input
+docker run --net bdproj1 --name sparkproj1 sparkproj1:1
+
+
+local time: 43.84956669807434, 42.14287972450256, 35.16823673248291(nakon sto sam modifikovao kod da bude isti)
+
+docker-compose tome: 38.70933127403259
+
